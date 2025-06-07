@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    font-family:
+
+}
+
+.inicio {
+    height: 100vh;
+    display: flex
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background: radial-gradient(circle at center,
+    #42570c, #3a225e, #e4c200, #7b4b2a );
+}
+
+.inicio-content h1{
+    font-size: 3rem
+    margin-bottom: 0.5rem
+
+}
