@@ -8,72 +8,100 @@
     src: url('Quicksand_Bold.ttf'), format('truetype');
 }
 
-.topbar {
+body {
+    margin: 0;
+    background-color: white;
+}
+
+header {
+    background-color: #f9c933;
+    padding: 20px 40px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background: linear-gradient(to bottom, #50317c, #fffde7);
-    
+
 }
 
-.titulo{
-    font-family: 'Nunito-ExtraBold';
+.logo h1{
+    margin: 0;
+    color: #3c1361;
+    font-size: 28px;
+    font-family: "Nunito-ExtraBold";
+}
+
+.logo h3{
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #6d4c41;
+    font-family: "Nunito-ExtraBold";
+}
+
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    align-items: center;
+    font-family: "Nunito-ExtraBold";
+}
+
+nav a{
+    text-decoration: none;
+    color: #3c1361;
     font-weight: bold;
-    text-align: center;
-    
+    font-family: "Nunito-ExtraBold";
 }
 
-.titulo h1{
-    font-size: 80px;
-    font-weight: 700;
-    color: #e4c200;
-    margin-bottom: 10px;
-    animation: expandir 1s ease-in-out;
-    transform-origin: center;
-    animation-delay: 00.05s;
-   
-}
-
-
-
-.titulo p{
-    font-family: "Quicksand_Bold.ttf";
-    font-size: 45px;
-    
-    color: #392355;
-    margin-bottom: 20px;
-    animation: expandir 1s ease-in-out;
-    transform-origin: center;
-    animation-delay: 00.05s;
-    
-
-}
-
-@keyframes expandir {
-    0% {
-        transform: scale(0.5);
-        opacity: 0;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
-.saiba-mais {
-    background-color: #50317c;
-    color: #fff;
-    border: none;
-    padding: 15px 30px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
-    font-family: 'Nunito-ExtraBold';
-    
-}
-
-.saiba-mais:hover {
+nav a:hover{
+    color: #2e7d32;
     transform: scale(1.1);
-    background-color: #392355;
+    transition: all 0.45s ease;
+}
+
+.botao:hover{
+    background-color: #1b5e20;
+    transform: scale(1.1);
+    transition: all 0.45s ease;
+}
+
+.botao {
+    background-color: #f9c933;
+    color: white !important;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-family: "Nunito-ExtraBold";
+}
+
+main{
+    background-color: #f9c933;
+    padding: 40px;
+}
+
+.conteudo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.texto{
+    max-width: 50%;
+    color: #3c1361;
+    font-weight: bold;
+    line-height: 1.6;
+    font-family: "Nunito-ExtraBold";
+}
+
+.img-copo{
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+  
+}
+
+.img-copo img{
+    width: 120px;
+    height: auto;
+    margin-right: auto;
 }
