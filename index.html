@@ -6,29 +6,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suco Sabido</title>
+    <style>
+      h1 {
+        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+      }
+
+      h3 {
+        text-shadow: 
+          1px 1px 2px rgba(0,0,0,0.4);
+      }
+
+      #titulo-suco {
+        font-family: 'Nunito-EXtraBold';
+        font-weight: 800; 
+        font-size: 32px;
+        margin-bottom: 40px;
+        color: #7b4b2a; }
+
+      #titulo-suco:hover {
+        color: #4caf50;
+        cursor: pointer;}
+
+      .frutas h3:hover{
+        color: black;
+      }
+    </style>
 </head>
 <body>
 
-    <header class="inicio">
-        <div class="inicio-content">
-            <h1>Suco Sabido</h1>
-            <p>Sabores que alimentam mentes brilhantes</p>
-            <a href="#sabores" class="frutas">Conheça os nossos sabores</a>
-        </div>
-    </header>
-
   <header>
-    <div class="logo">
+    <div class="logo"; id="inicio">
       <h1>Suco Sabido</h1>
-      <h3>A cultura no combate a desnutrição!</h3>
+      <h3 style="color: #7b4b2a;">A cultura no combate a desnutrição!</h3>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Nossos Sabores</a></li>
-        <li><a href="#">Nossos Ingredientes</a></li>
-        <li><a href="#">Sobre Nós</a></li>
-        <li><a href="#" class="botao">Saiba Mais</a></li>
+    <nav class="menu">
+      <ul style="text-shadow: 0 0 15px rgba(255,255,255,0.6);">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sabores">Nossos Sabores</a></li>
+        <li><a href="#ingredientes">Nossos Ingredientes</a></li>
+        <li><a href="#contato">Sobre Nós</a></li>
+        <li><a href="#saiba_mais" class="botao">Saiba Mais</a></li>
       </ul>
     </nav>
   </header>
@@ -49,5 +66,182 @@
       </div>
     </section>
   </main>
+
+  <section class="sabores"; id="sabores">
+    <h2 id="titulo-suco">Conheça Nossos Sabores</h2>
+    <div class="pics">
+      
+      <div class="pic">
+        <button class="botao_suco">ZigZag do Saber</button>
+        <img src="/imagem/zigzag.png"/>
+        <p style="font-family: 'Nunito-ExtraBold';color: #7b4b2a;">Sabor marcante e energético. Ideal para despertar <br>
+          ideias com seu azedinho favorito!</p>
+        <p style="font-family: 'Nunito-ExtraBold';color: #7b4b2a;">A mistura perfeita com <span style="color: #e4c200;">caju</span> e <span style="color: #3a225e;">açaí</span> batido <br>
+        com água de coco e limão.</p>
+      </div>
+      
+      
+      <div class="pic">
+        <button class="botao_suco">Frescor do Saber</button>
+        <img src="imagem/frescor.png"/>
+        <p style="font-family: 'Nunito-ExtraBold';color: #7b4b2a;">Refrescante com leve doçura natural. Um gole <br>
+        que traz calma e foco, como uma brisa na mente!</p>
+        <p style="font-family: 'Nunito-ExtraBold';color: #7b4b2a;">O melhor batido com <span style="color: grey;">cupuaçu</span> e <span style="color: #42570c;">hortelã</span> junto com <br>
+        água e açúcar de coco</p>
+      </div>
+
+      <div class="pic">
+        <button class="botao_suco">Raio do Saber</button>
+        <img src="imagem/raio.png"/>
+        <p style="font-family: 'Nunito-ExtraBold';color: #7b4b2a;">Vibrante, frutado e CHEIO de vitalidade! um gole <br>
+        ilumina o pensamento como um raio de Sol tropical.</p>
+        <p style="font-family: 'Nunito-ExtraBold';color: #7b4b2a;">Suco com sabor de <span style="color: #d6581f;">buriti</span> e <span style="color: orange;">laranja</span> servido <br>
+        com raspas de abacaxi e mel nativo.</p>
+      </div>
+
+    </div>
+  </section>
+   
+
+  <section id="ingredientes">
+    <h2 id="titulo-suco">Conheça Nossos Ingredientes</h2>
+     <div class="frutas">
+      <img src="imagem/acai.png">
+      <h3 style="font-family: 'Nunito-ExtraBold'; color: #7b4b2a;">AÇAÍ</h3>
+      <p style="color: #3a225e; font-family: 'Nunito-ExtraBold';">Rico em vitamina A e C, ferro, potássio, fonte de energia,<br>
+      possui ação antioxidante, anti-inflamatória,<br>
+    auxilia na perda de peso e na saúde do coração</p>
+     </div>
+
+     <div class="frutas">
+      <img src="imagem/caju.png">
+      <h3 style="font-family: 'Nunito-ExtraBold';color: #7b4b2a;">CAJU</h3>
+      <p style="color: #e4c200; font-family: 'Nunito-ExtraBold';">Auxilia na saúde óssea, digestão e saúde do <br>
+      coração, possui ação antioxidante e
+    rico <br> em vitamina A e C</p>
+     </div>
+
+     <div class="frutas">
+      <img src="imagem/cupuacu.png">
+      <h3 style="font-family: 'Nunito-ExtraBold';color: #7b4b2a;">CUPUAÇU</h3>
+      <p style="color: grey; font-family: 'Nunito-ExtraBold';">Melhora o sistema imunológico e a digestão,<br> 
+      traz energia e disposição, é um hidratante natural e <br>
+      possui ação anti-inflamatória.</p>
+     </div>
+
+     <div class="frutas">
+      <img src="imagem/hortela.png">
+      <h3 style="font-family: 'Nunito-ExtraBold';color: #7b4b2a;">HORTELÃ</h3>
+      <p style="color: #42570c; font-family: 'Nunito-ExtraBold';">Ação calmante e refrescante, melhora na
+      saúde bucal e digestão,<br> possui ação antioxidante, antibacteriana<br> e também 
+      é um descongestionante natural.</p>
+     </div>
+
+     <div class="frutas">
+      <img src="imagem/buriti.png">
+      <h3 style="font-family: 'Nunito-ExtraBold';color: #7b4b2a;">BURITI</h3>
+      <p style="color: #d6581f; font-family: 'Nunito-ExtraBold';">Rico em vitamina A e C, melhora a saúde da pele,<br>e possui ação antioxidante e anti-inflamatória.</p>
+     </div>
+
+     <div class="frutas">
+      <img src="imagem/laranja.png">
+      <h3 style="font-family: 'Nunito-ExtraBold';color: #7b4b2a;">LARANJA</h3>
+      <p style="color: orange; font-family: 'Nunito-ExtraBold';">Hidratante natural, reduz o colesterol,<br>
+      melhora a saúde do coração e a disgestão,<br>e possui ação antioxidante.</p>
+     </div>
+  </section>
+
+<section class="ondulado">
+  <svg viewBox="0  0 3000 200" xmlns="https://www.w3.org/2000/svg">
+    <path id="ondulado" d="M0,100,Q750,0 1500,100 T3000,100" fill="transparent"/>
+    <text font-size="36" fill="#7b4b2a" font-family='Nunito-ExtraBold'>
+      <textPath href="#ondulado" startOffset="0%">
+        SUCO SABIDO • SABOR E SABEDORIA • SUCO SABIDO • SABOR E SABEDORIA • SUCO SABIDO • SABOR E SABEDORIA • SUCO SABIDO • SABOR E SABEDORIA • SUCO SABIDO • SABOR E SABEDORIA
+      </textPath>
+    </text>
+  </svg>
+</section>
+
+
+
+<section class="desnutricao">
+  <div>
+    
+  </div>
+
+
+
+
+</section>
+
+
+
+
+
+<section>
+  <div class="form-container"; id="saiba_mais">
+    <form class="form"; style="font-family: 'Nunito-EXtraBold';">
+      <h2>Inscreva-se como Pessoa ou Professor</h2>
+      <p class="mensagem">
+        Preencha esse formulário para cadastrar-se como pessoa interessada no Suco 
+        Sabido. Entraremos em contato por e-mail.</p>
+
+      <label for="primeiro-nome">Primeiro Nome:</label>
+      <input type="text" id="primeiro-nome" name="primeiro-nome" placeholder="Ex: Lisandra">
+
+      <label for="ultimo-nome">Último Nome:</label>
+      <input type="text" id="ultimo-nome" name="ultimo-nome" placeholder="Ex: Oliveira">
+
+      <label for="e-mail">Email:</label>
+      <input type="email" id="email" name="email" placeholder="seu@email.com">
+
+      <label for="cidade">Cidade:</label>
+      <input type="text" id="cidade" name="cidade" placeholder="Ex: Jaboatão dos Guararapes">
+
+      <button type="submit">Enviar inscrição</button>
+    </form>
+
+    <form class="form"; style="font-family: 'Nunito-EXtraBold';">
+      <h2>Inscreva sua Escola ou Instituição</h2>
+      <p class="mensagem">
+        Preencha esse formulário para inscrever sua escola ou instituição 
+        no Suco Sabido. Entraremos em contato via email e telefone.</p>
+      
+        <label for="nome-escola">Nome da Escola / Instituição:</label>
+        <input type="text" id="nome-escola" name="nome-escola" placeholder="Ex: EREM Augusto Severo">
+
+        <label for="cidade-escola">Cidade:</label>
+        <input type="text" id="cidade-escola" name="cidade-escola" placeholder="Ex: Recife">
+
+        <label for="email-escola">Email:</label>
+        <input type="email" id="email-escola" name="email-escola" placeholder="contato@escola.com">
+
+        <label for="telefone-escola">Telefone:</label>
+        <input type="tel" id="telefone-escola" name="telefone-escola" placeholder="(81) 99999-9999">
+
+        <button type="submit">Enviar inscrição</button>
+
+
+    </form>
+
+  </div>
+
+
+
+</section>
+
+<section>
+  <div class="rodape"; id="contato">
+    <p style="color: #4a197a;">Desenvolvido com muito sabor por 
+      <a href="mailto:lss52@discente.ifpe.edu.br">Laís Santos</a> e 
+      <a href="mailto:dpsa1@discente.ifpe.edu.br">Davi Pedro Alves</a> - 2025 </p>
+    <p style="color: #4a197a;">📧 <a href="mailto:sucosabido@gmail.com">sucosabido@gmail.com</a></p>
+    <p style="color: #4a197a;">📱 <a href="https://instagram.com/sucosabido" target="_blank">@sucosabido</a> on instagram!</p>
+    <p style="color: #4a197a;">📄 <a href="receitas_suco_sabido.pdf" target="_blank">Acesse nossas receitas em PDF</a></p>
+    <p style="color: #4a197a;">© Suco Sabido - Todos os direitos reservados</p>
+  </div>
+</section>
+
+
 </body>
 </html>

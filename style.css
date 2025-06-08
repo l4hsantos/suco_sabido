@@ -22,6 +22,13 @@ header {
 
 }
 
+
+html{
+    scroll-behavior: smooth;
+    /*deixa a página descer mais suave*/
+
+}
+
 .logo h1{
     margin: 0;
     color: #3c1361;
@@ -32,7 +39,7 @@ header {
 .logo h3{
     margin: 5px 0 0;
     font-size: 14px;
-    color: #6d4c41;
+    color: #7b4b2a;
     font-family: "Nunito-ExtraBold";
 }
 
@@ -78,7 +85,7 @@ main{
     padding: 40px;
 }
 
-.conteudo{
+.paragrafo{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -101,7 +108,248 @@ main{
 }
 
 .img-copo img{
-    width: 120px;
+    width: 350px;
     height: auto;
-    margin-left: auto;
+    
+}
+
+.sabores {
+    text-align: center;
+    padding: 50px 20px;
+    background: #fff;
+}
+
+.sabores h2{
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+
+
+/* Container/parte com todas as imagens */
+.pics{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.botao_suco {
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  color: white;
+  background: #4caf50;
+  cursor: pointer;
+  transition: transform 0.45s ease, background-color 0.45s ease;
+}
+
+/* Hover do botão */
+.botao_suco:hover {
+  transform: scale(1.1);
+  background-color: #388e3c;
+}
+
+/* Cada imagem individualmente */
+.pic {
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: transform 0.45s;
+}
+
+.pic img{
+    width: 180px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+#ingredientes{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 40px;
+    text-align: center;
+    overflow-x: auto;
+    align-items: center;
+    background-color: #fffaf0;
+}
+
+.frutas{
+    width: 150px;
+    flex: 0 0 auto;
+}
+
+.frutas{
+    flex: 1 1 15%;
+    min-width: 150px;
+}
+
+.frutas img{
+    width: 50px;
+    margin-bottom: 10px;
+    box-shadow: 0 5px 13px rgba(0,0,0,0.15);
+    border-radius: 12px;
+    transition: transform 0.45s ease, box-shadow 0.45s ease;
+}
+
+.frutas img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+.ondulado{
+    width: 100%;
+    overflow: hidden;
+    background-color: #fffaf0;
+    padding: 0;
+}
+
+.ondulado svg{
+    width: 100%;
+    height: 120px;
+    display: block;
+}
+
+.rodape{
+    background-color: #f9c933;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    font-size: 12px;
+    margin-top: 2em;
+}
+
+.rodape a{
+    color: #3c1361;
+    text-decoration: none;
+}
+
+.rodape a:hover{
+    text-decoration: underline;
+}
+
+
+
+/* CSS FORMÚLARIO; SALVAR ALTERAÇÕES ANTIGAS EM CASO DE ALTERAÇÃO */
+.form .mensagem {
+  background-color: #f4ebfa;
+  border-left: 5px solid #4a197a;
+  padding: 0.8rem;
+  font-size: 15px;
+  margin-bottom: 1rem;
+  color: #333;
+  border-radius: 4px;
+}
+
+.form-container {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: center;
+  background-color: #f9f9f9;
+  flex-wrap: wrap; /*(responsividade)*/
+}
+
+.form {
+  background-color: #3c1361;  
+  border: 3px solid #f9d71c;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 48%;
+  box-sizing: border-box;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: transform 0.3s ease;
+}
+
+.form:hover {
+  transform: scale(1.02);
+}
+
+.form h2 {
+  margin-bottom: 1rem;
+  color: #f9d71c;
+}
+
+.form .mensagem {
+  background-color: rgba(249, 215, 28, 0.15);
+  border-left: 5px solid #f9d71c;
+  padding: 0.8rem;
+  font-size: 15px;
+  margin-bottom: 1rem;
+  color: white;
+  border-radius: 5px;
+}
+
+.form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #ffe847;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1.5px solid #f9d71c;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 15px;
+  background-color: #4e2589;
+  color: white;
+  transition: border-color 0.4s ease;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: #d8c93c;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border-color: #fff94f;
+  outline: none;
+  background-color: #5c2c9b;
+}
+
+.form textarea {
+  resize: vertical;
+  min-height: 80px;
+  color: white;
+}
+
+.form button {
+  margin-top: 1.5rem;
+  background-color: #f9d71c;
+  color: #3c1361;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+  transition: background-color 0.45s ease, color 0.45s ease,
+              transform 0.45s ease, box-shadow 0.45s ease;
+}
+
+.form button:hover {
+  background-color: #d4b800;
+  color: #3c1361;
+  transform: scale(1.06);
+  box-shadow: o 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Responsividade: 1 em cima do outro */
+@media (max-width: 700px) {
+  .form {width: 100%;}
 }
